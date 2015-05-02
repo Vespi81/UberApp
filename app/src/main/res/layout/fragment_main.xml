@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.sahmadsyed.uberapp.UberActivity$PlaceholderFragment" >
+
+    <TextView android:id="@+id/select_text"
+        android:text="@string/select_text_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button android:id="@+id/user_info_button"
+        android:text="@string/user_info_button_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+
+
+
+    <!--  <Button
+        android:id="@+id/price_estimate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="@string/get_price_estimate" />
+
+    <TextView
+        android:id="@+id/price_estimate_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#B2CCCC" /> -->
+    <!-- <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>-->
+
+
+
+</LinearLayout>
