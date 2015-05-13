@@ -11,18 +11,21 @@ import android.util.Log;
 
 import org.json.JSONArray;
 import org.json.JSONException;
+import org.json.JSONObject;
 
 public class ProductsActivity extends FragmentActivity {
     private static final String TAG = "SALMAN";
     public static final String PRODUCT_INFO_KEY = "com.example.salman.uberapp.product_info";
-
+    public static final String COORDS_KEY = "com.example.salman.uberapp.coords";
     private JSONArray mProducts;
+    private String mCoords;
 
     @Override
     public void onCreate(Bundle onSavedInstance){
         super.onCreate(onSavedInstance);
         setContentView(R.layout.activity_products);
-        String products = getIntent().getStringExtra(ProductsFragment.PRODUCT_KEY);
+        String products = getIntent().getStringExtra(ProductsFragment.PRODUCTS_KEY);
+        mCoords = getIntent().getStringExtra(ProductsFragment.COORDS_KEY);
         try {
             mProducts = new JSONArray(products);
         }catch(JSONException e){
@@ -43,6 +46,7 @@ public class ProductsActivity extends FragmentActivity {
             Bundle bundle = new Bundle();
             try {
                 bundle.putString(PRODUCT_INFO_KEY, mProducts.getJSONObject(i).toString());
+                bundle.putString(COORDS_KEY, mCoords);
             }catch(JSONException e){
                     Log.e(TAG, e.getMessage());
             }

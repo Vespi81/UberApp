@@ -40,10 +40,10 @@ public class HTTPModel {
         String resp = out.toString();
         JSONObject accessTokenObj = new JSONObject(resp);
         Log.i(TAG, accessTokenObj.toString());
-        String refreshToken = accessTokenObj.getString("refresh_token");
-        String accessToken = accessTokenObj.getString("access_token");
-        Log.i(TAG, "Refresh Token: " + refreshToken);
-        Log.i(TAG, "Access Token: " + accessToken);
+//        String refreshToken = accessTokenObj.getString("refresh_token");
+//        String accessToken = accessTokenObj.getString("access_token");
+//        Log.i(TAG, "Refresh Token: " + refreshToken);
+//        Log.i(TAG, "Access Token: " + accessToken);
         return accessTokenObj;
     }
 

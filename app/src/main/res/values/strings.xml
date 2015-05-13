@@ -15,7 +15,9 @@
     <string name="promo_code_text_text">Promo Code:</string>
     <string name="enter_address_text_text">Enter address:</string>
     <string name="ok_button_text">OK</string>
-    <string name="enter_address_text">Enter address</string>
+    <string name="enter_start_address_text">Enter start address</string>
+    <string name="enter_end_address_text">Enter end address</string>
+    <string name="product_request">Request</string>
 
 
 </resources>
